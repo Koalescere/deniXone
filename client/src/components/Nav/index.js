@@ -3,10 +3,10 @@ import "./navbar.css";
 
 function Nav() {
   return (
-    
+    <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
          <a className="navbar-brand" href="/"> 
-              deniXone
+              deni<strong>X</strong>one
          </a>
 
          <div class="col" id="righttitle">
@@ -24,6 +24,7 @@ function Nav() {
     </div>
 
      </nav>
+     </div>
   );
 }
 
@@ -33,9 +34,3 @@ export default Nav;
 
 
 
-
-// <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-//       <a className="navbar-brand" href="/">
-//         React Reading List
-//       </a>
-//     </nav>
