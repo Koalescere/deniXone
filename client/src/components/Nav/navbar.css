@@ -1,7 +1,10 @@
 .navbar {
-    height:900px;
-    background: 
-  linear-gradient(
+    height: 100px;
+    background-image: linear-gradient(90deg, rgb(77, 76, 76) 0%, rgb(255, 255, 255) 48.4848%, rgb(77, 48, 48) 100%);
+    border-bottom: 1px solid rgba(5, 5, 5, 0.582);
+
+    /* background:  */
+  /* linear-gradient(
     rgb(254, 253, 255), 
     rgb(232, 230, 240), 
     rgb(200, 184, 236), 
@@ -9,10 +12,10 @@
     rgb(137, 121, 175), 
     rgb(96, 87, 116), 
     rgb(35, 35, 46)
-  );
-  background-image: url(/client/); 
+  ); */
+  /* background-image: url(/client/public/images/login2.png); 
   background-size: contain;
-  background-position: center;
+  background-position: center; */
 
 }
 
@@ -52,3 +55,25 @@ strong {
     border: 2px solid rgb(5, 5, 5);
 
 }
+
+
+/* <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+         <a className="navbar-brand" href="/"> 
+              deni<strong>X</strong>one
+         </a>
+
+         <div class="col" id="righttitle">
+        <div class="dropdown" id="accountdiv">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-alt"></i>
+            </a>
+          
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Account</a>
+              <a class="dropdown-item" href="#">Favorites</a>
+              <a class="dropdown-item" href="#">Log out</a>
+            </div>
+          </div>
+    </div>
+
+     </nav> */
