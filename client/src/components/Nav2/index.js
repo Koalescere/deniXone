@@ -1,9 +1,9 @@
-import React from "react";
-import "./Dropdownbar.css";
+import React from "./node_modules/react";
+import "./dropdownbar.css";
 
-function Dropdownbar() {
+function Nav2() {
   return (
-    <div>
+    <div className="dropbar">
       <select class="custom-select navselect">
     <option selected>Bedrooms</option>
     <option value="1">1 bedroom</option>
@@ -15,6 +15,6 @@ function Dropdownbar() {
   );
 }
 
-export default Dropdownbar;
+export default Nav2;
 
 

@@ -5,7 +5,6 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import Dropdownbar from "./components/Dropdownbar";
 import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
 
 
@@ -41,7 +40,7 @@ class App extends React.Component {
     <Router>
       <div>
         <Nav />
-        <Dropdownbar />
+        <Nav2 />
         <Switch>
           <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
           <Route exact path="/signup"  render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
