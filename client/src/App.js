@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import Books from "./pages/Books";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Map from "./pages/Map";
+import Map from "./components/Map";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import {/* getCookie, */ authenticateUser } from "./utils/handleSessions";
+import "./GlobalStyles/style.css";
 
 
 class App extends React.Component {
@@ -18,31 +19,31 @@ class App extends React.Component {
     loading: false
   }
 
-  authenticate = () => authenticateUser()
-    .then(auth => this.setState({ authenticated: auth.data, loading: false }))
-    .catch(err => console.log(err))
+  // authenticate = () => authenticateUser()
+  //   .then(auth => this.setState({ authenticated: auth.data, loading: false }))
+  //   .catch(err => console.log(err))
 
-  componentWillMount() {
-    this.authenticate();
-  }
+  // componentWillMount() {
+  //   this.authenticate();
+  // }
 
-  PrivateRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={(props) => (
-      this.state.authenticated === true
-        ? <Component {...props} />
-        : this.state.loading === true
-          ? <div></div>
-          : <Redirect to='/' />
-    )} />
-  )
+  // PrivateRoute = ({ component: Component, ...rest }) => (
+  //   <Route {...rest} render={(props) => (
+  //     this.state.authenticated === true
+  //       ? <Component {...props} />
+  //       : this.state.loading === true
+  //         ? <div></div>
+  //         : <Redirect to='/' />
+  //   )} />
+  // )
 
   render() {
     return (
       <Router>
         <div>
           <Nav />
-          <Route component={Map} />
           <Switch>
+            <Route exact path="/map" component={Map} />
             <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
             <Route exact path="/signup" render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
             <this.PrivateRoute exact path="/books" component={Books} />
