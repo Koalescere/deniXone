@@ -28,6 +28,7 @@
     "express-session": "^1.17.0",
     "if-env": "^1.0.4",
     "js-cookie": "^2.2.1",
+    "mapbox-gl": "^1.6.0",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1",
     "session": "^0.1.0"

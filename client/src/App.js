@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import Books from "./pages/Books";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Map from "./pages/Map";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
+import {/* getCookie, */ authenticateUser } from "./utils/handleSessions";
 
 
 class App extends React.Component {
@@ -18,37 +19,40 @@ class App extends React.Component {
   }
 
   authenticate = () => authenticateUser()
-    .then(auth => this.setState({authenticated: auth.data, loading:false}))
+    .then(auth => this.setState({ authenticated: auth.data, loading: false }))
     .catch(err => console.log(err))
 
-  componentWillMount(){
+  componentWillMount() {
     this.authenticate();
   }
-  
+
   PrivateRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={  (props) => (
-      this.state.authenticated === true 
+    <Route {...rest} render={(props) => (
+      this.state.authenticated === true
         ? <Component {...props} />
         : this.state.loading === true
-          ?<div></div>
+          ? <div></div>
           : <Redirect to='/' />
     )} />
   )
 
-  render(){
+  render() {
     return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
-          <Route exact path="/signup"  render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
-          <this.PrivateRoute exact path="/books" component={Books} />
-          <Route component={NoMatch} />
-        </Switch>
-      </div>
-    </Router>
-  )}
+      <Router>
+        <div>
+          <Nav />
+          <Route component={Map} />
+          <Switch>
+            <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
+            <Route exact path="/signup" render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
+            <this.PrivateRoute exact path="/books" component={Books} />
+            <Route component={NoMatch} />
+          </Switch>
+
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App;
