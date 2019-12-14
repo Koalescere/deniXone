@@ -9,16 +9,16 @@ function Nav() {
               deni<strong>X</strong>one
          </a>
 
-         <div class="col" id="righttitle">
-        <div class="dropdown" id="accountdiv">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-alt"></i>
+         <div className="col" id="righttitle">
+        <div className="dropdown" id="accountdiv">
+            <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i className="fas fa-user-alt"></i>
             </a>
           
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Account</a>
-              <a class="dropdown-item" href="#">Favorites</a>
-              <a class="dropdown-item" href="#">Log out</a>
+            <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a className="dropdown-item" href="#">Account</a>
+              <a className="dropdown-item" href="#">Favorites</a>
+              <a className="dropdown-item" href="#">Log out</a>
             </div>
           </div>
     </div>

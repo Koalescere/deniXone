@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+// import Nav2 from "./components/Nav2";
 import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
 
 
@@ -40,7 +41,9 @@ class App extends React.Component {
     <Router>
       <div>
         <Nav />
+        {/* <div>
         <Nav2 />
+        </div> */}
         <Switch>
           <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
           <Route exact path="/signup"  render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />

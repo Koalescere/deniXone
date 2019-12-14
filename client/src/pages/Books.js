@@ -57,10 +57,9 @@ class Books extends Component {
 
   render() {
     return (
-      <container fluid>
-          <Nav2 />
-      </container>
+   
       <Container fluid>
+        <Nav2 />
         <Row>
           <Col size="md-6">
             <Jumbotron>
