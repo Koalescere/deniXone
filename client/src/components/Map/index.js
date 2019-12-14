@@ -7,11 +7,15 @@ import { Col, Row, Container } from "../Grid";
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2VhbmxlaWZoZWxsaWVyIiwiYSI6ImNrNDF5eHU5cjA2azYzZXRiaWMxajhvMW0ifQ.rbsRpnedC5remepOVsmxBg';
 
 class Map extends React.Component {
-    state = {
-        lng: 40.75,
-        lat: -73.94,
-        zoom: 12
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            lng: 40.75,
+            lat: -73.94,
+            zoom: 12
+        };
+    }
+
 
     componentDidMount() {
         const map = new mapboxgl.Map({
@@ -25,7 +29,9 @@ class Map extends React.Component {
         return (
             <div>
                 <div ref={el => this.mapContainer = el} className="mapContainer" />
+                <div>map</div>
             </div>
+
         )
     }
 

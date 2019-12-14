@@ -19,24 +19,6 @@ class App extends React.Component {
     loading: false
   }
 
-  // authenticate = () => authenticateUser()
-  //   .then(auth => this.setState({ authenticated: auth.data, loading: false }))
-  //   .catch(err => console.log(err))
-
-  // componentWillMount() {
-  //   this.authenticate();
-  // }
-
-  // PrivateRoute = ({ component: Component, ...rest }) => (
-  //   <Route {...rest} render={(props) => (
-  //     this.state.authenticated === true
-  //       ? <Component {...props} />
-  //       : this.state.loading === true
-  //         ? <div></div>
-  //         : <Redirect to='/' />
-  //   )} />
-  // )
-
   render() {
     return (
       <Router>
@@ -46,7 +28,7 @@ class App extends React.Component {
             <Route exact path="/map" component={Map} />
             <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
             <Route exact path="/signup" render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
-            <this.PrivateRoute exact path="/books" component={Books} />
+            {/* <this.PrivateRoute exact path="/books" component={Books} /> */}
             <Route component={NoMatch} />
           </Switch>
 
