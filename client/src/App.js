@@ -6,7 +6,7 @@ import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Searchbar from "./components/searchbar";
-// import Nav2 from "./components/Nav2";
+import Footer from "./components/Footer";
 import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
 
 
@@ -52,6 +52,7 @@ class App extends React.Component {
           <this.PrivateRoute exact path="/books" component={Books} />
           <Route component={NoMatch} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   )}
