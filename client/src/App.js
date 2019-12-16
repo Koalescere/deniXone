@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Searchbar from "./components/searchbar";
 // import Nav2 from "./components/Nav2";
 import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
 
@@ -41,6 +42,7 @@ class App extends React.Component {
     <Router>
       <div>
         <Nav />
+       <Searchbar />
         {/* <div>
         <Nav2 />
         </div> */}
