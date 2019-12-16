@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Input, FormBtn } from "../Form";
 import "./Loginmodal.css";
 
 function Loginmodal() {
@@ -12,24 +12,14 @@ function Loginmodal() {
         <p>Login to your account to access all the features of deniXone.</p>
         <br></br>
         <form>
-            <Input
-             value={this.state.email}
-             onChange={this.handleInputChange}
-             name="email"
-             placeholder="email (required)"
-           />
-             <Input
-             value={this.state.email}
-             onChange={this.handleInputChange}
-             name="email"
-             placeholder="email (required)"
-           />
-            <FormBtn
-                disabled={!(this.state.email && this.state.password)}
-                onClick={this.handleFormSubmit}
-              >
+          {/* email */}
+          <Input />
+          {/* password */}
+          <input />
+            <FormBtn>
                   sign in
               </FormBtn>
+              <p>Not a member yet?</p>
               <button><a href="/signup">sign up</a></button>
         </form>
         <p>Not a member yet?</p>

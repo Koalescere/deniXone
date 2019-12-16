@@ -1,6 +1,7 @@
 .navbar {
-    height: 100px;
+    height: 60px;
     background-image: url(./Untitled.png);
+    align-content: center;
 
     /* background-image: linear-gradient(90deg, rgb(77, 76, 76) 0%, rgb(255, 255, 255) 48.4848%, rgb(77, 48, 48) 100%); */
     border-bottom: 1px solid rgb(5, 5, 5);
@@ -23,18 +24,29 @@
 }
 
 div {
+  /* height: 70px; */
    background-image: url(/client/public/images/login2.png); 
   background-size: contain;
+  justify-content: center;
 }
 
 .navbar-brand {
-    font-family: 'Krona One', sans-serif;
+  color: rgb(218, 17, 17);
+  /* justify-content: center; */
+  /* height: 70px; */
+  font-family: 'Jura', sans-serif;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-shadow: 2px 3px 4px #000000;
+  
+  /* font-family: 'Krona One', sans-serif; */
+    /* font-family: 'Krona One', sans-serif;
     font-size: 40px;
     letter-spacing: 5px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     font-weight: bold;
     color: white;
-    text-shadow: 2px 9px 7px #000000;
+    text-shadow: 2px 9px 7px #000000; */
     /* text-shadow: 2px 16px 6px #000,
              -2px -2px 1px #000,
              -2px 2px 1px #000,
@@ -43,12 +55,15 @@ div {
 
 }
 strong {
-    font-size: 56px;
+  /* height: 70px; */
+    font-size: 40px;
+    color: white;
 }
 
 
 /* #accountdiv */
  #righttitle #accountdiv .dropdownmenu {
+  align-content: center;
 
     /* justify-content: right; */
     /* background-color: rgba(112, 128, 144, 0.698); */

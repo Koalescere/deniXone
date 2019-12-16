@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color: rgba(11, 29, 46, 0.507);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.head {
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-shadow: 2px 3px 4px #000000;
+}
