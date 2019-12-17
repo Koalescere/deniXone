@@ -1,11 +1,12 @@
 const express = require("express");
-
+const mysql = require("mysql");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 var session = require('express-session')
+const inquirer = require("inquirer");
 
 //logs
 app.use(morgan("dev"));

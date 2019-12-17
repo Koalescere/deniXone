@@ -1,0 +1,49 @@
+.jumbotron {
+    background-color: rgba(4, 32, 58, 0.774);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: 1px solid rgb(7, 7, 6);
+    /* padding: 20px; */
+}
+
+.head {
+    font-family: 'Jura', sans-serif;
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-shadow: 2px 3px 4px #000000;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    /* padding-left: 30px; */
+    /* box-shadow: 6px 1px 9px #000000; */
+}
+
+.cross {
+    font-family: 'Jura', sans-serif;
+    font-size: 60px;
+    letter-spacing: 15px;
+    text-shadow: 2px 3px 4px #000000;
+}
+
+.lead {
+
+    word-spacing: 3px;
+    letter-spacing: 4px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: lighter;
+    font-size: x-large;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.follows {
+
+    letter-spacing: 4px;
+    letter-spacing: 4px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: large;
+
+    /* font-family: 'Roboto', sans-serif; */
+}

@@ -5,6 +5,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Searchbar from "./components/searchbar";
+import Footer from "./components/Footer";
+import Loginmodal from "./components/Loginmodal";
 import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
 
 
@@ -40,6 +43,9 @@ class App extends React.Component {
     <Router>
       <div>
         <Nav />
+       {/* <Searchbar /> */}
+       <Loginmodal />
+       <Footer />
         <Switch>
           <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
           <Route exact path="/signup"  render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
