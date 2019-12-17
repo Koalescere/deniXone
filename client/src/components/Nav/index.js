@@ -6,10 +6,10 @@ function Nav() {
     <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
          <a className="navbar-brand" href="/"> 
-              deni<strong>X</strong>one
+              deni<strong className="strong">X</strong>one
          </a>
 
-         <div className="col" id="righttitle">
+         <div className="accountdrop" id="righttitle">
         <div className="dropdown" id="accountdiv">
             <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i className="fas fa-user-alt"></i>

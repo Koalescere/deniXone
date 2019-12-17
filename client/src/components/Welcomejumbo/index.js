@@ -2,28 +2,27 @@ import React from "react";
 import "./Welcomejumbo.css";
 
 function Welcomejumbo() {
-    return(
-        <div className="jumbotron">
-        <div className="container">
-    <h1 className="display-4 head">DENI<strong>X</strong>ONE</h1>
-  <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr className="my-4" />
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p className="lead">
-    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
-</div>
-
-
-
-        /* <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4 head">deni<strong>X</strong>one</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-  </div>
-</div> */
-    )
+  return (
+    <div className="jumbotron">
+      <div className="container">
+        <h1 className="display-4 head">
+          DENI<strong className="cross">X</strong>ONE
+        </h1>
+        <p className="lead">
+        DENIXONE is a visual tool designed to show trends in property values.  
+        </p>
+        {/* <hr className="my-4" /> */}
+        <p className="follows">
+         Built upon our database of current and historical real estate sales. DENIXONE provides   
+        </p>
+        <p className="follows">
+          <a className="btn btn-primary btn-lg" href="#" role="button">
+            Start your search{" "}
+          </a>
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default Welcomejumbo;

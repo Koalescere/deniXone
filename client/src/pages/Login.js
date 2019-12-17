@@ -4,6 +4,7 @@ import API from "../utils/API";
 import {  Redirect } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, FormBtn } from "../components/Form";
+import Searchbar from "../components/searchbar";
 import Welcomejumbo from "../components/Welcomejumbo";
 
 class Login extends Component {
@@ -11,6 +12,7 @@ class Login extends Component {
   render() {
     return (
       <div className="Mapcont">
+        <Searchbar />
         <Welcomejumbo />
         </div>
     )

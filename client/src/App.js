@@ -43,7 +43,7 @@ class App extends React.Component {
     <Router>
       <div>
         <Nav />
-       <Searchbar />
+       {/* <Searchbar /> */}
        <Loginmodal />
        <Footer />
         <Switch>
