@@ -8,12 +8,75 @@ import Searchbar from "../components/searchbar";
 import Welcomejumbo from "../components/Welcomejumbo";
 
 class Login extends Component {
+
+
+
+state = {
+  email: "",
+  password: ""
+};
+
+componentDidMount() {
+}
+
+handleInputChange = event => {
+const { name, value } = event.target;
+this.setState({
+  [name]: value
+});
+};
+
+handleFormSubmit = event => {
+event.preventDefault();
+if (this.state.email && this.state.password) {
+  API.loginUser({
+    email: this.state.email,
+    password: this.state.password
+  })
+    .then(res => {
+      if(res.status === 200 ){
+        this.props.authenticate();
+        return <Redirect to="/books" />
+      }
+    })
+    .catch(err => console.log(err));
+}
+};
  
   render() {
     return (
       <div className="Mapcont">
-        <Searchbar />
         <Welcomejumbo />
+        <Row>
+  <Col size="12">
+
+    <form>
+      <Input
+        value={this.state.email}
+        onChange={this.handleInputChange}
+        name="email"
+        placeholder="email (required)"
+      />
+      <Input
+        value={this.state.password}
+        onChange={this.handleInputChange}
+        name="password"
+        placeholder="(required)"
+        type="password"
+      />
+      
+      <FormBtn
+        disabled={!(this.state.email && this.state.password)}
+        onClick={this.handleFormSubmit}
+      >
+          sign in
+      </FormBtn>
+      <button><a href="/signup">sign up</a></button>
+    </form>
+  </Col>
+  
+</Row>
+
         </div>
     )
     }

@@ -51,11 +51,11 @@ function Searchbar() {
 
     // form-control form-control-sm mr-3 w-10
     // form-control form-control-sm navselect
-{/* <div classname="searchbar">
+/* <div classname="searchbar">
     <row>
         <col className="col-4">
         </col>
         <col className="col-8">
         </col>
     </row>
-</div> */}
+</div> */
