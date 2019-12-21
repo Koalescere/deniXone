@@ -16,7 +16,7 @@ function Welcomejumbo() {
          Built upon our database of current and historical real estate sales. DENIXONE provides   
         </p>
         <p className="follows">
-          <a className="btn btn-primary btn-lg" href="#" role="button">
+          <a className="btn btn-primary btn-lg" href="./books" role="button">
             Start your search{" "}
           </a>
         </p>

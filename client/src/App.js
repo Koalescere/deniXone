@@ -5,9 +5,10 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import Searchbar from "./components/searchbar";
-import Footer from "./components/Footer";
+// import Searchbar from "./components/searchbar";
+import Footer from "./components/footer";
 import Loginmodal from "./components/Loginmodal";
+// import Mapcomp from "./components/Mapcomp";
 import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
 
 

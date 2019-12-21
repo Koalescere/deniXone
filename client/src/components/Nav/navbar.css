@@ -1,9 +1,10 @@
 .navbar {
+    z-index: 10;
     height: 60px;
     background-image: url(./Untitled.png);
     align-content: center;
     border-bottom: 1px solid rgb(5, 5, 5);
-    box-shadow: 10px 10px 8px #272727be;
+    box-shadow: 7px 7px 8px #2727279d;
 
 }
 
