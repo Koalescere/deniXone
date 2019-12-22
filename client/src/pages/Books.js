@@ -60,11 +60,8 @@ class Books extends Component {
   render() {
     return (
    <div>
-      <Container fluid>
         <Searchbar />
         <Mapcomp />
-        <Searchbar />
-      </Container>
       </div>
     );
   }

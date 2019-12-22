@@ -4,12 +4,19 @@ import "./navbar.css";
 function Nav() {
   return (
     <div>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="topbar navbar navbar-expand-lg navbar-dark">
          <a className="navbar-brand" href="/"> 
               deni<strong className="strong">X</strong>one
          </a>
+        
+     </nav>
+     </div>
+  );
+}
 
-         <div className="accountdrop" id="righttitle">
+export default Nav;
+
+       /* <div className="accountdrop" id="righttitle">
         <div className="dropdown" id="accountdiv">
             <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i className="fas fa-user-alt"></i>
@@ -21,13 +28,44 @@ function Nav() {
               <a className="dropdown-item" href="#">Log out</a>
             </div>
           </div>
-    </div>
+    </div> */
 
-     </nav>
-     </div>
-  );
-}
+    /* <container>
+         <row>
+           <col>
+                <select class="form-control form-control-sm">
+                  <option>Small select</option>
+                </select>
+           </col>
 
-export default Nav;
+           <col>
+                <select class="form-control form-control-sm">
+                  <option>Small select</option>
+                </select>
+           </col>
 
+           <col>
+               <select class="form-control form-control-sm">
+                  <option>Small select</option>
+                </select>
+           </col>
+               
+           <col>
+                 <select class="form-control form-control-sm">
+                  <option>Small select</option>
+                </select>
+           </col>
 
+           <col>
+                 <select class="form-control form-control-sm">
+                  <option>Small select</option>
+                </select>
+           </col>
+
+           <col>
+                <select class="form-control form-control-sm">
+                  <option>Small select</option>
+                </select>
+           </col>
+         </row>
+         </container> */

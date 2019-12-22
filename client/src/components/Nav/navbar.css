@@ -1,16 +1,14 @@
-.navbar {
+.topbar {
     z-index: 10;
-    height: 60px;
-    background-image: url(./Untitled.png);
+    background-color: rgba(19, 2, 46, 0.63);
+    height: 50px;
     align-content: center;
-    border-bottom: 1px solid rgb(5, 5, 5);
-    box-shadow: 7px 7px 8px #2727279d;
-
+    border-bottom: 1px solid rgba(185, 185, 185, 0.678);
+    /* box-shadow: 7px 7px 8px #2727279d; */
+    justify-content: start;
 }
 
 div {
-  /* height: 70px; */
-   background-image: url(/client/public/images/login2.png); 
   background-size: contain;
   justify-content: center;
 }
@@ -30,6 +28,13 @@ div {
     color: white;
 }
 
+.searchrow {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
  #righttitle #accountdiv .dropdownmenu {
   align-content: flex-end;

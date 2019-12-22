@@ -19,7 +19,7 @@ class Mapcomp extends React.Component {
 componentDidMount() {
 const map = new mapboxgl.Map({
 container: this.mapContainer,
-style: 'mapbox://styles/daniel218/ck4e9kqxn12kv1crxnwha3k7o',
+style: 'mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd',
 center: [this.state.lng, this.state.lat],
 zoom: this.state.zoom
 });
