@@ -1,62 +1,36 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import Books from "./pages/Books";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
-// import Searchbar from "./components/searchbar";
+import React, { Component } from "react";
+import AppNavbar from './components/AppNavbar';
+import { Container } from 'reactstrap';
+import { Provider } from 'react-redux';
+import store from './store';
+import { loadUser } from './actions/authActions';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Footer from "./components/footer";
-import Loginmodal from "./components/Loginmodal";
 // import Mapcomp from "./components/Mapcomp";
-import {/* getCookie, */ authenticateUser} from "./utils/handleSessions";
+import Searchbar from "./components/searchbar";
+// import Welcomejumbo from "./components/Welcomejumbo";
 
-
-class App extends React.Component {
-  // check cookie
-  // getCookie();
-
-  state = {
-    authenticated: false,
-    loading: false
+class App extends Component {
+  componentDidMount() {
+    store.dispatch(loadUser());
   }
 
-  authenticate = () => authenticateUser()
-    .then(auth => this.setState({authenticated: auth.data, loading:false}))
-    .catch(err => console.log(err))
-
-  componentWillMount(){
-    this.authenticate();
-  }
-  
-  PrivateRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={  (props) => (
-      this.state.authenticated === true 
-        ? <Component {...props} />
-        : this.state.loading === true
-          ?<div></div>
-          : <Redirect to='/' />
-    )} />
-  )
-
-  render(){
+  render() {
     return (
-    <Router>
-      <div>
-        <Nav />
-        <Footer />
+      <Provider store={store}>
+        <div className="App">
+          <AppNavbar />
+          <Searchbar />
+          <Container>
+            {/* <Mapcomp /> */}
+            <Footer />
+          </Container>
+        </div>
+      </Provider >
+    );
+  }
 
-       <Loginmodal />
-       <Footer />
-        <Switch>
-          <Route exact path="/" render={(props) => <Login {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
-          <Route exact path="/signup"  render={(props) => <Signup {...props} authenticate={this.authenticate} authenticated={this.state.authenticated} />} />
-          <this.PrivateRoute exact path="/books" component={Books} />
-          <Route component={NoMatch} />
-        </Switch>
-      </div>
-    </Router>
-  )}
 }
 
 export default App;
