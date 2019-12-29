@@ -1,30 +1,47 @@
-.navdiv {
+.Snavbar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: rgb(46, 35, 82);
+  background-color: rgba(230, 140, 117, 0);
 
-  height: 50px;
-  justify-content: space-between;
-  align-items: center;
-
-  box-shadow: 5px 2px 5px #000000;
-  border-bottom: 1px solid rgba(185, 185, 185, 0.678);
-  z-index: 40;
+  height: 40px;
+  justify-items: center;
+  align-content: center;
+  margin-top: 10px;
+  /* box-shadow: 5px 2px 5px #000000; */
+  /* border-bottom: 1px solid rgba(185, 185, 185, 0.678); */
+  z-index: 100;
+  padding-left: 40px;
 }
 
 NavbarToggler {
   z-index: 45;
-  background-color: rgb(120, 98, 192);
-  height: 30px;
+  background-color: rgb(255, 0, 0);
+  height: 20px;
   width: 30px;
   color: white;
-  align-self: flex-end;
+  margin-top: 10px;
+  margin-left: 40px;
 }
 
-.collapselist {
+button {
+  background-color: rgb(17, 0, 255);
+}
+
+.fadebtn {
   display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  justify-content: left;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-content: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.labelz {
+  margin-left: 20px;
+  align-self: center;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12px;
 }

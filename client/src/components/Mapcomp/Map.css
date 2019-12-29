@@ -1,17 +1,17 @@
 .mapContainer {
   z-index: 0;
   position: absolute;
-  top: 80px;
+  top: 40px;
   right: 0;
   left: 0;
-  bottom: 30px;
+  bottom: 0;
 }
 
 .sidebarStyle {
   display: inline-block;
   position: absolute;
-  top: 85px;
-  left: 0;
+  bottom: 30px;
+  left: 60px;
   margin: 12px;
   color: #ffffff;
   z-index: 1 !important;

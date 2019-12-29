@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
 import Mapcomp from "./components/Mapcomp";
-import Searchbar from "./components/searchbar";
+// import Searchbar from "./components/searchbar";
 import SearchCollapse from "./components/SearchCollapse";
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
           <AppNavbar />
           <SearchCollapse />
           <Container>
-            \ <Mapcomp />
+            <Mapcomp />
             <Footer />
           </Container>
         </div>

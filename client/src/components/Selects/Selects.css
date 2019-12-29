@@ -1,6 +1,6 @@
-.selex {
+#exampleSelect {
   background-color: rgb(87, 83, 104);
-  height: 25px;
+  height: 20px;
   width: 150px;
   color: rgba(255, 255, 255, 0.76);
   align-items: center;
@@ -9,4 +9,12 @@
   border: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  /* padding-bottom: 20px; */
+  align-self: center;
+}
+
+.selectlabel {
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12px;
 }

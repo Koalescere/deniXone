@@ -2,7 +2,7 @@ import React from "react";
 import { Form, FormGroup, Label, Input, FormText } from "reactstrap";
 import "../Selects.css";
 
-const BoroSelect = props => {
+const YearSelect = props => {
   return (
     <div>
       <FormGroup>
@@ -28,4 +28,4 @@ const BoroSelect = props => {
   );
 };
 
-export default BoroSelect;
+export default YearSelect;

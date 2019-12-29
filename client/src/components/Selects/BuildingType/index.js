@@ -1,16 +1,30 @@
 import React from "react";
+import { Form, FormGroup, Label, Input } from "reactstrap";
+
 import "../Selects.css";
 
-function BoroSelect() {
+const BuildingType = props => {
   return (
-    <div>
-      <select class="selex">
-        <option>Small select</option>
-        <option>Small select</option>
-        <option>Small select</option>
-      </select>
-    </div>
+    <FormGroup>
+      {/* <Label for="exampleSelect" className="selectlabel">
+        Select
+      </Label> */}
+      <Input
+        type="select"
+        className="Selex"
+        bsSize="sm"
+        name="select"
+        id="exampleSelect"
+        placeholder="sm"
+      >
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </Input>
+    </FormGroup>
   );
-}
+};
 
-export default BoroSelect;
+export default BuildingType;
