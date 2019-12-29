@@ -35,7 +35,7 @@ button {
 
   align-content: center;
   justify-content: space-around;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .labelz {
@@ -44,4 +44,30 @@ button {
   color: white;
   font-family: "Rajdhani", sans-serif;
   font-size: 12px;
+}
+
+.submitbutton {
+  height: 30px;
+  width: 60px;
+}
+
+.nudge {
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .fadebtn {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50px;
+    margin-top: 80px;
+  }
+
+  .submitbtn {
+    align-items: center;
+    position: absolute;
+    top: 20px;
+  }
 }

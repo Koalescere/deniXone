@@ -29,14 +29,16 @@ const SearchCollapse = props => {
           <Zoned />
           <p className="labelz">YEAR</p>
           <YearSelect />
-          <Button
-            color="info"
-            onClick={"submit"}
-            size="sm"
-            className="filterbtn"
-          >
-            Search
-          </Button>
+          <div className="nudge">
+            <Button
+              color="info"
+              onClick={props}
+              size="sm"
+              className="submitbutton"
+            >
+              Search
+            </Button>
+          </div>
         </Fade>
       </Navbar>
     </div>
