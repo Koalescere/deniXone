@@ -6,9 +6,9 @@ const BoroSelect = props => {
   return (
     <div>
       <FormGroup>
-        {/* <Label for="exampleSelect" className="selectlabel">
-          Select
-        </Label> */}
+        <Label for="exampleSelect" className="selectlabel">
+          Borough
+        </Label>
         <Input
           type="select"
           className="Selex"
@@ -17,11 +17,11 @@ const BoroSelect = props => {
           id="exampleSelect"
           placeholder="sm"
         >
-          <option className="Selex">1</option>
-          <option className="Selex">2</option>
-          <option className="Selex">3</option>
-          <option className="Selex">4</option>
-          <option className="Selex">5</option>
+          <option className="Selex">Manhattan</option>
+          <option className="Selex">Bronx</option>
+          <option className="Selex">Brooklyn</option>
+          <option className="Selex">Queens</option>
+          <option className="Selex">Staten Island</option>
         </Input>
       </FormGroup>
     </div>
