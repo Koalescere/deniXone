@@ -1,0 +1,30 @@
+.navdiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: rgb(46, 35, 82);
+
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 5px 2px 5px #000000;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.678);
+  z-index: 40;
+}
+
+NavbarToggler {
+  z-index: 45;
+  background-color: rgb(120, 98, 192);
+  height: 30px;
+  width: 30px;
+  color: white;
+  align-self: flex-end;
+}
+
+.collapselist {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: left;
+}

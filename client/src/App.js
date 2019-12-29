@@ -9,7 +9,7 @@ import "./App.css";
 import Footer from "./components/footer";
 import Mapcomp from "./components/Mapcomp";
 import Searchbar from "./components/searchbar";
-import Sidebar from "./components/Sidebar";
+import SearchCollapse from "./components/SearchCollapse";
 
 class App extends Component {
   componentDidMount() {
@@ -21,10 +21,9 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <AppNavbar />
-          <Searchbar />
-          <Sidebar />
+          <SearchCollapse />
           <Container>
-            <Mapcomp />
+            \ <Mapcomp />
             <Footer />
           </Container>
         </div>
