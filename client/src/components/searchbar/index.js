@@ -2,66 +2,57 @@ import React from "react";
 import "./searchbar.css";
 
 function Searchbar() {
-  return(
-   
+  return (
     <div>
-    <nav className="drops navbar navbar-expand-lg navbar-dark">
+      <nav className="drops navbar navbar-expand-lg navbar-dark">
+        <select class="selex">
+          <option>Small select</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
 
-<select class="selex">
-  <option>Small select</option>
-  <option>Small select</option>
-  <option>Small select</option>
-</select>
+        <select class="selex">
+          <option>Small select</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
 
-<select class="selex">
-  <option>Small select</option>
-  <option>Small select</option>
-  <option>Small select</option>
-</select>
+        <select class="selex">
+          <option>Small select</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
 
-<select class="selex">
-  <option>Small select</option>
-  <option>Small select</option>
-  <option>Small select</option>
-</select>
+        <select class="selex">
+          <option>Small select</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
 
-<select class="selex">
-  <option>Small select</option>
-  <option>Small select</option>
-  <option>Small select</option>
-</select>
+        <select class="selex">
+          <option>Small select</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
 
-<select class="selex">
-  <option>Small select</option>
-  <option>Small select</option>
-  <option>Small select</option>
-</select>
+        <select class="selex">
+          <option>Small select</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
 
-<select class="selex">
-  <option>Small select</option>
-  <option>Small select</option>
-  <option>Small select</option>
-</select>
-
-
-
-
-  <div className="btndiv">
-  <input class="btn btn-sm" type="submit" value="Submit" />
+        <div className="btndiv">
+          <input class="btn btn-sm" type="submit" value="Submit" />
+        </div>
+      </nav>
     </div>
- 
-    
-        
-     </nav>
-     </div>
-  
   );
-    }
+}
 
-    export default Searchbar;
+export default Searchbar;
 
-    // form-control form-control-sm mr-3 w-10
-    // form-control form-control-sm navselect
+// form-control form-control-sm mr-3 w-10
+// form-control form-control-sm navselect
 /* <div classname="searchbar">
     <row>
         <col className="col-4">
