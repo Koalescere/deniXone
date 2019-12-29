@@ -1,21 +1,16 @@
 .footer {
-    height:30px;
-    border-top: 1px solid rgb(5, 5, 5);
-    justify-content: center;
-    align-content: center;
-    background-color: rgba(19, 2, 46, 0.548);
-    text-align: center;
-    z-index: 80;
-
-
-
+  height: 30px;
+  /* border-top: 1px solid rgb(5, 5, 5); */
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(24, 18, 44, 0);
+  text-align: center;
+  z-index: 80;
 }
 
 .footertext {
-
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 12px;
-    text-align: center;
-    color: rgba(173, 173, 173, 0.459);
-
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.664);
 }

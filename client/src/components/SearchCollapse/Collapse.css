@@ -1,0 +1,73 @@
+.Snavbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: rgba(230, 140, 117, 0);
+
+  height: 40px;
+  justify-items: center;
+  align-content: center;
+  margin-top: 10px;
+  /* box-shadow: 5px 2px 5px #000000; */
+  /* border-bottom: 1px solid rgba(185, 185, 185, 0.678); */
+  z-index: 100;
+  padding-left: 40px;
+}
+
+NavbarToggler {
+  z-index: 45;
+  background-color: rgb(255, 0, 0);
+  height: 20px;
+  width: 30px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+button {
+  background-color: rgb(17, 0, 255);
+}
+
+.fadebtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-content: center;
+  justify-content: space-around;
+  /* padding-top: 10px; */
+}
+
+.labelz {
+  margin-left: 20px;
+  align-self: center;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12px;
+}
+
+.submitbutton {
+  height: 30px;
+  width: 60px;
+}
+
+.nudge {
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .fadebtn {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50px;
+    margin-top: 80px;
+  }
+
+  .submitbtn {
+    align-items: center;
+    position: absolute;
+    top: 20px;
+  }
+}
