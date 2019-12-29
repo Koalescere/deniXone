@@ -1,8 +1,8 @@
 #exampleSelect {
-  background-color: rgb(87, 83, 104);
+  background-color: rgb(92, 92, 92);
   height: 20px;
   width: 150px;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(228, 225, 225, 0.76);
   align-items: center;
   font-family: "Rajdhani", sans-serif;
   font-size: 12px;
@@ -11,10 +11,11 @@
   margin-right: 10px;
   /* padding-bottom: 20px; */
   align-self: center;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .selectlabel {
-  color: white;
+  color: rgba(212, 211, 211, 0.89);
   font-family: "Rajdhani", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
 }

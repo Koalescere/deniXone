@@ -6,9 +6,9 @@ import "../Selects.css";
 const BuildingType = props => {
   return (
     <FormGroup>
-      {/* <Label for="exampleSelect" className="selectlabel">
-        Select
-      </Label> */}
+      <Label for="exampleSelect" className="selectlabel">
+        Building Type
+      </Label>
       <Input
         type="select"
         className="Selex"

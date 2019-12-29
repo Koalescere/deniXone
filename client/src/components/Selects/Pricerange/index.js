@@ -6,9 +6,9 @@ import "../Selects.css";
 const Pricerange = props => {
   return (
     <FormGroup>
-      {/* <Label for="exampleSelect" className="selectlabel">
-        Select
-      </Label> */}
+      <Label for="exampleSelect" className="selectlabel">
+        Price Range
+      </Label>
       <Input
         type="select"
         className="Selex"

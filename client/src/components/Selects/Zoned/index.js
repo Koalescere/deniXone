@@ -6,9 +6,9 @@ import "../Selects.css";
 const Zoned = props => {
   return (
     <FormGroup>
-      {/* <Label for="exampleSelect" className="selectlabel">
-        Select
-      </Label> */}
+      <Label for="exampleSelect" className="selectlabel">
+        Zoning
+      </Label>
       <Input
         type="select"
         className="Selex"

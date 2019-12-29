@@ -6,9 +6,9 @@ const BoroSelect = props => {
   return (
     <div>
       <FormGroup>
-        {/* <Label for="exampleSelect" className="selectlabel">
-          Select
-        </Label> */}
+        <Label for="exampleSelect" className="selectlabel">
+          Borough
+        </Label>
         <Input
           type="select"
           className="Selex"
