@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DeniXone Geometry Test</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2VhbmxlaWZoZWxsaWVyIiwiYSI6ImNrNDV5anVzZDBkdjczbHA1dW5rNHNwcmEifQ.iSbpiPjqUBw2n881PqsbuQ';
+
+        jQuery.ajaxPrefilter(function (options) {
+            if (options.crossDomain && jQuery.support.cors) {
+                options.url = 'https://cors-anywhere.herokuapp.com/' + "http://bl.ocks.org/bsudekum/raw/5431771/nycneighborhoods.js";
+            }
+        });
+
+
+        $.ajax({
+            url: "http://bl.ocks.org/bsudekum/raw/5431771/nycneighborhoods.js", success: function (result) {
+                console.log(result);
+                console.log(JSON.parse(result));
+                // for (let i = 0; i < array.length; i++) {
+
+
+                // }
+            }
+        });
+
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/navigation-guidance-night-v4',
+            center: [-74.0060, 40.7128],
+            zoom: 12
+        });
+
+        map.on('load', function () {
+            map.addLayer({
+                'id': 'maine',
+                'type': 'fill',
+                'source': {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [
+                                [[-73.94732672160579, 40.62916656720943], [-73.94642266064318, 40.6243855672864], [-73.94542442897408, 40.624495609598185], [-73.94451833370498, 40.61971364709504], [-73.94651373127873, 40.61949401914963], [-73.94573691912028, 40.61536340675661], [-73.94742608780807, 40.61422460055365], [-73.95026514882962, 40.613924351797365], [-73.94978380450677, 40.61137175047764], [-73.95256553090685, 40.610987184733915], [-73.95258786948972, 40.61111223958901], [-73.95359888852907, 40.610949865606365], [-73.96237947824763, 40.6099863745258], [-73.96471983385584, 40.6223729607027], [-73.96864510622689, 40.621941695814826], [-73.96909724465462, 40.62433282513798], [-73.97047171931135, 40.62417003048162], [-73.97136622157025, 40.628929162715856], [-73.9700010976348, 40.62911347375596], [-73.96040734342054, 40.630162530576236], [-73.95995565121835, 40.627778672540586], [-73.94732672160579, 40.62916656720943]]
+                            ]
+                        }
+                    }
+                },
+                'layout': {},
+                'paint': {
+                    'fill-color': '#088',
+                    'fill-opacity': 0.4
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

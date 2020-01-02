@@ -7,7 +7,7 @@ import { loadUser } from './actions/authActions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Footer from "./components/footer";
-// import Mapcomp from "./components/Mapcomp";
+import Mapcomp from "./components/Mapcomp";
 import Searchbar from "./components/searchbar";
 // import Welcomejumbo from "./components/Welcomejumbo";
 
@@ -23,7 +23,7 @@ class App extends Component {
           <AppNavbar />
           <Searchbar />
           <Container>
-            {/* <Mapcomp /> */}
+            <Mapcomp />
             <Footer />
           </Container>
         </div>
