@@ -8,8 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
 import Newmap from "./components/Newmap";
-import Mapcomp from "./components/Mapcomp";
-import SearchCollapse from "./components/SearchCollapse";
+// import Range from "./components/Range";
 
 class App extends Component {
   componentDidMount() {
@@ -21,7 +20,7 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <AppNavbar />
-          <SearchCollapse />
+          <container className="sidemap">{/* <Range /> */}</container>
           <Newmap />
           <Footer />
         </div>
