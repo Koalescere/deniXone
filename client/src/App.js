@@ -7,8 +7,8 @@ import { loadUser } from "./actions/authActions";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
+import Newmap from "./components/Newmap";
 import Mapcomp from "./components/Mapcomp";
-// import Searchbar from "./components/searchbar";
 import SearchCollapse from "./components/SearchCollapse";
 
 class App extends Component {
@@ -22,10 +22,8 @@ class App extends Component {
         <div className="App">
           <AppNavbar />
           <SearchCollapse />
-          <Container>
-            <Mapcomp />
-            <Footer />
-          </Container>
+          <Newmap />
+          <Footer />
         </div>
       </Provider>
     );
