@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import MapGL from "react-map-gl";
-import Range from "../Range";
 import "./Map.css";
 
 var MapboxAccessToken =
@@ -24,13 +23,12 @@ class Newmap extends Component {
   render() {
     return (
       <div>
-        <Range />
         <MapGL
           {...this.state.viewport}
           className="mapContainer"
           width="100vw"
           height="100vw"
-          mapStyle="mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd"
+          mapStyle="mapbox://styles/daniel218/ck4e9kqxn12kv1crxnwha3k7o"
           onViewportChange={viewport => this.setState({ viewport })}
           mapboxApiAccessToken={MapboxAccessToken}
         />
