@@ -10,6 +10,22 @@ const app = express();
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+var connection = mysql.createConnection({
+  host: "localhost",
+  port: 3306,
+  user: "root",
+  password: "70-Mousey_05",
+  database: "Sales2019_DB"
+})
+connection.connect(function (err) {
+  if (err) throw err;
+  runSearch();
+})
+var runSearch = function () {
+  console.log("Connection succesful to mySQL!");
+}
+
+
 
 //DB Config
 // const db = require('./config/keys').mongoURI;
