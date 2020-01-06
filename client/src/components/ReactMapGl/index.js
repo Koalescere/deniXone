@@ -10,9 +10,9 @@ function ReactMapGl() {
 
     // width: 100,
     // height: 400,
-    latitude: 40.6891,
-    longitude: -73.8984,
-    zoom: 9
+    latitude: 40.651166,
+    longitude: -73.992694,
+    zoom: 9.5
   });
 
   return (
@@ -20,8 +20,8 @@ function ReactMapGl() {
       {...viewport}
       className="mapContainer"
       width="100vw"
-      height="44vw"
-      mapStyle="mapbox://styles/daniel218/ck4e9kqxn12kv1crxnwha3k7o"
+      height="42vw"
+      mapStyle="mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd"
       onViewportChange={setViewport}
       mapboxApiAccessToken={TOKEN}
     />

@@ -4,20 +4,22 @@ import Slider, { Range } from "rc-slider";
 // We can just import Slider or Range to reduce bundle size
 // import Slider from "rc-slider/lib/Slider";
 // import Range from "rc-slider/lib/Range";
-import "rc-slider/assets/index.css";
+import "./Timeline.css";
 
 // const Slider = require("rc-slider");
-const createSliderWithTooltip = Slider.createSliderWithTooltip;
+// const createSliderWithTooltip = Slider.createSliderWithTooltip;
 // const Range = createSliderWithTooltip(Slider.Range);
 
 class Timeline extends Slider {
   render() {
     return (
-      <navbar>
+      <div class="slideDiv">
+        {/* <h2 class="h2slider">TIMELINE</h2> */}
         <div>
+          TIMELINE
           <Slider />
         </div>
-      </navbar>
+      </div>
     );
   }
 }
