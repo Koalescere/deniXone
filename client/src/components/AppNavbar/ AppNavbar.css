@@ -6,7 +6,7 @@
 
   font-family: "Rajdhani", sans-serif;
   font-size: 15px;
-  height: 80px;
+  height: 60px;
   justify-content: stretch;
   align-items: center;
   box-shadow: 5px 2px 5px #000000;
@@ -20,11 +20,16 @@
 .logo {
   height: 40px;
   font-family: "Syncopate", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 20px;
   position: absolute;
   left: 50px;
-
+  text-shadow: 
+  h-shadow: 4px,
+  
+  
+  /* 2px 8px 9px rgba(255, 255, 255, 0.534); */
+  
   background: linear-gradient(to top, #30cfd0 0%, #6d05eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
