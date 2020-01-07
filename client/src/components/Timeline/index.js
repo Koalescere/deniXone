@@ -11,10 +11,26 @@ import "./Timeline.css";
 // const Range = createSliderWithTooltip(Slider.Range);
 
 class Timeline extends Slider {
+  // The proto of the slider component
+  constructor(props) {
+    super(props);
+    this.state = {
+      min: 1,
+      max: 3,
+      value: 1,
+      vertical: true
+    };
+  }
+
+  // Function called onchange to collect the value and set the new value
+  onChange = value => {
+    console.log(value);
+    this.setState({ value });
+  };
+
   render() {
     return (
       <div class="slideDiv">
-        {/* <h2 class="h2slider">TIMELINE</h2> */}
         <div>
           TIMELINE
           <Slider />
