@@ -1,4 +1,16 @@
 .sidemap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.listmap {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

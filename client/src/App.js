@@ -25,14 +25,7 @@ class App extends Component {
           <AppNavbar />
           {/* <Timeline /> */}
           <container className="sidemap">
-            <row>
-              <Col>
-                <Sidebar />
-              </Col>
-              <Col>
-                <ReactMapGl />
-              </Col>
-            </row>
+            <ReactMapGl />
           </container>
           <Footer />
         </div>
@@ -54,4 +47,14 @@ export default App;
           <Footer />
         </div>
       </Provider> */
+}
+{
+  /* <row className="listmap">
+<Col xs={2}>
+  <Sidebar />
+</Col>
+<Col md={8}>
+  <ReactMapGl />
+</Col>
+</row> */
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
+import Mapmenu from "../Mapmenu";
 
 var TOKEN =
   "pk.eyJ1IjoiZGFuaWVsMjE4IiwiYSI6ImNrNDI2M3dhNjAxbXQza21rMmJrZTNpeGIifQ.QtSS2CZJCCb4EasGfmteVw";
@@ -16,15 +17,18 @@ function ReactMapGl() {
   });
 
   return (
-    <ReactMapGL
-      {...viewport}
-      className="mapContainer"
-      width="100vw"
-      height="42vw"
-      mapStyle="mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd"
-      onViewportChange={setViewport}
-      mapboxApiAccessToken={TOKEN}
-    />
+    <div>
+      <ReactMapGL
+        {...viewport}
+        className="mapContainer"
+        width="100vw"
+        height="42vw"
+        mapStyle="mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd"
+        onViewportChange={setViewport}
+        mapboxApiAccessToken={TOKEN}
+      />
+      <Mapmenu />
+    </div>
   );
 }
 
