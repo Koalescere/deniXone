@@ -67,9 +67,9 @@ class AppNavbar extends Component {
       <div>
         <Navbar dark expand="sm" className="appnavbar">
           <Container>
-            <h1 className="logo">PRISM</h1>
+            <h1 className="logo">PRISM NYC</h1>
             {/* <NavbarBrand className="logo" href="/">
-              PRISM
+              PRISM NYC
             </NavbarBrand> */}
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
