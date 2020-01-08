@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
-import Mapmenu from "../Mapmenu";
+import Slider2 from "../Slider2";
 
 var TOKEN =
   
@@ -31,7 +31,7 @@ function ReactMapGl() {
         onViewportChange={setViewport}
         mapboxApiAccessToken={TOKEN}
       />
-      <Mapmenu />
+      {/* <Slider2 /> */}
     </div>
   );
 }
