@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
 import ReactMapGl from "./components/ReactMapGl";
-import Sidebar from "./components/Sidebar";
+import Slider2 from "./components/Slider2";
 // import Timeline from "./components/Timeline";
 
 // import Newmap from "./components/Newmap";
@@ -23,8 +23,8 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <AppNavbar />
-          {/* <Timeline /> */}
           <container className="sidemap">
+            <Slider2 />
             <ReactMapGl />
           </container>
           <Footer />
