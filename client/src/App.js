@@ -8,8 +8,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
 import ReactMapGl from "./components/ReactMapGl";
-import Slider2 from "./components/Slider2";
-// import Timeline from "./components/Timeline";
+import Slider3 from "./components/Slider3";
+import Legend from "./components/Legend";
 
 // import Newmap from "./components/Newmap";
 
@@ -24,8 +24,9 @@ class App extends Component {
         <div className="App">
           <AppNavbar />
           <container className="sidemap">
-            <Slider2 />
+            <Slider3 />
             <ReactMapGl />
+            <Legend />
           </container>
           <Footer />
         </div>
