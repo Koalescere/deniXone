@@ -67,9 +67,10 @@ class AppNavbar extends Component {
       <div>
         <Navbar dark expand="sm" className="appnavbar">
           <Container>
-            <NavbarBrand className="logo" href="/">
-              deniXone{" "}
-            </NavbarBrand>
+            <h1 className="logo">PRISM NYC</h1>
+            {/* <NavbarBrand className="logo" href="/">
+              PRISM NYC
+            </NavbarBrand> */}
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto drop" navbar>

@@ -1,33 +1,50 @@
+.sidemap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.listmap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .App {
   text-align: center;
 }
 
-.remove-btn{
+.remove-btn {
   margin-right: 0.5rem;
 }
 
-.fade-enter{
-  opacity:  0.01;
-}
-
-.fade-enter-active{
-  opacity: 1;
-  transition:  opacity 1000ms ease-in;
-
-}
-
-.fade-exit{
-  opacity: 1;
-}
-
-.fade-exit-active{
+.fade-enter {
   opacity: 0.01;
-  transition:  opacity 1000ms ease-in;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
 }
 
 .App-logo {
   height: 30vmin;
-  
+
   pointer-events: none;
 }
 
@@ -50,7 +67,6 @@
 
 .App-link {
   color: #61dafb;
-
 }
 
 @keyframes App-logo-spin {
