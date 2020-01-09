@@ -131,7 +131,6 @@ class RegisterModal extends Component {
                                     color="dark"
                                     style={{ marginTop: '2rem' }}
                                     block
-  
                                 >Register
                         </Button>
                             </FormGroup>
