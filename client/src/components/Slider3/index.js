@@ -15,26 +15,54 @@ class Slider3 extends React.Component {
       value: 2018
     };
   }
-  onSliderChange = value => {
-    log(value);
-    this.setState({
-      value
-    });
+};
+  // onSliderChange = value => {
+  //   log(value);
+  //   this.setState({
+  //     value
+  //   });
+
+onSliderChange = value => {
+      switch (this.setState({value})) {
+        case 2018:
+    mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd
+          break;
+        case 2017:
+    mapbox://styles/daniel218/ck52f7j01lii71co4cpbzl8kp
+          break;
+        case 2016:
+    mapbox://styles/daniel218/ck52f6er28cdi1cp5jfxfe7q3
+          break;
+        default:
+    mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd
+      }
+
+
+
+
+
+   
+
+
+
+
+
+
     // switchStyles = value => {
     //   switch (expression) {
     //     case 2018:
-    //       // code block
+    // mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd
     //       break;
     //     case 2017:
-    //       // code block
+    // mapbox://styles/daniel218/ck52f7j01lii71co4cpbzl8kp
     //       break;
     //     case 2016:
-    //       // code block
+    // mapbox://styles/daniel218/ck52f6er28cdi1cp5jfxfe7q3
     //       break;
     //     default:
-    //     // code block
+    // mapbox://styles/daniel218/ck4foemqf0bcx1co45ueme2hd
     //   }
-  };
+  
   onAfterChange = value => {
     console.log(value); //eslint-disable-line
   };
