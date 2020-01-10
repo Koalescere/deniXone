@@ -20,13 +20,13 @@ import { json as requestJson } from "d3-request";
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGFuaWVsMjE4IiwiYSI6ImNrNDI2M3dhNjAxbXQza21rMmJrZTNpeGIifQ.QtSS2CZJCCb4EasGfmteVw ";
 
-map.on("load", function() {
+  componentDidMount() {
   map.addLayer({
     id: "collisions",
     type: "circle",
     source: {
       type: "geojson",
-      data: "" // replace this with the url of your own geojson
+      data: "client/data/2016.geojson" // replace this with the url of your own geojson
     },
     paint: {
       "circle-radius": [
@@ -58,7 +58,7 @@ map.on("load", function() {
       "circle-opacity": 0.8
     }
   });
-});
+}
 
 class App extends Component {
   componentDidMount() {
@@ -72,7 +72,7 @@ class App extends Component {
           <AppNavbar />
           <container className="sidemap">
             {/* <Slider3 /> */}
-            <ReactMapGl />
+            {/* <ReactMapGl /> */}
           </container>
           <Footer />
         </div>
