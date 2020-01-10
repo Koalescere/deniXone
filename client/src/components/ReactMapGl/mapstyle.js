@@ -2,6 +2,7 @@
 export const dataLayer = {
     id: 'data',
     type: 'vector',
+    url: 'mapbox://daniel218.7mhojmbm'
     paint: {
       'fill-color': {
         property: 'percentile',
