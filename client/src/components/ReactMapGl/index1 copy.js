@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
 import { Slider, RangeSlider } from "rsuite";
 import "rsuite/dist/styles/rsuite-default.css";
+// import Slider2 from "../Slider3";
 
-var TOKEN= 
+var TOKEN =
+  
 "pk.eyJ1IjoiZGFuaWVsMjE4IiwiYSI6ImNrNDI2M3dhNjAxbXQza21rMmJrZTNpeGIifQ.QtSS2CZJCCb4EasGfmteVw";
 function ReactMapGl() {
   const [viewport, setViewport] = useState({
@@ -28,6 +30,18 @@ function ReactMapGl() {
         onViewportChange={setViewport}
         mapboxApiAccessToken={TOKEN}
       />
+           <Slider
+          id="slider"
+          value={this.state.value}
+          onChange={this.onSliderChange}
+          onAfterChange={this.onAfterChange}
+          defaultValue={2018}
+          min={2016}
+          max={2018}
+          step={1}
+          vertical
+          barClassName="stylebar"
+        />
     </div>
   );
 }
