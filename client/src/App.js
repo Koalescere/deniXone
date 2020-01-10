@@ -9,7 +9,7 @@ import "./App.css";
 import Footer from "./components/footer";
 import ReactMapGl from "./components/ReactMapGl";
 import Slider3 from "./components/Slider3";
-import Legend from "./components/Legend";
+// import Legend from "./components/Legend";
 
 // import Newmap from "./components/Newmap";
 
@@ -26,7 +26,7 @@ class App extends Component {
           <container className="sidemap">
             <Slider3 />
             <ReactMapGl />
-            <Legend />
+            {/* <Legend /> */}
           </container>
           <Footer />
         </div>
