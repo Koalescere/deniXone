@@ -4,16 +4,17 @@ import { Slider, RangeSlider } from "rsuite";
 import "rsuite/dist/styles/rsuite-default.css";
 // import Slider2 from "../Slider3";
 
-var TOKEN =
-  
+var TOKEN = 
 "pk.eyJ1IjoiZGFuaWVsMjE4IiwiYSI6ImNrNDI2M3dhNjAxbXQza21rMmJrZTNpeGIifQ.QtSS2CZJCCb4EasGfmteVw";
-function ReactMapGl() {
-  const [viewport, setViewport] = useState({
+
+
+class ReactMapGl extends component {
+  const [viewport, setViewport]: useState{
     isFullscreen: true,
     latitude: 40.762,
     longitude: -73.943,
     zoom: 13.05
-  });
+  };
 
   return (
     <div>
