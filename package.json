@@ -43,5 +43,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koalescere/deniXone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Koalescere/deniXone/issues"
+  },
+  "homepage": "https://github.com/Koalescere/deniXone#readme"
 }
