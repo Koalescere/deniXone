@@ -8,10 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
 import ReactMapGl from "./components/ReactMapGl";
-import Slider2 from "./components/Slider2";
-// import Timeline from "./components/Timeline";
-
-// import Newmap from "./components/Newmap";
+import Slider3 from "./components/Slider3";
 
 class App extends Component {
   componentDidMount() {
@@ -24,7 +21,6 @@ class App extends Component {
         <div className="App">
           <AppNavbar />
           <container className="sidemap">
-            <Slider2 />
             <ReactMapGl />
           </container>
           <Footer />
@@ -35,26 +31,3 @@ class App extends Component {
 }
 
 export default App;
-
-{
-  /* <Provider store={store}>
-        <div className="App">
-          <AppNavbar />
-          <Timeline />
-          <container className="sidemap">
-            <ReactMapGl />
-          </container>
-          <Footer />
-        </div>
-      </Provider> */
-}
-{
-  /* <row className="listmap">
-<Col xs={2}>
-  <Sidebar />
-</Col>
-<Col md={8}>
-  <ReactMapGl />
-</Col>
-</row> */
-}
