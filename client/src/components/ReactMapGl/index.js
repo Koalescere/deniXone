@@ -15,9 +15,9 @@ function ReactMapGl() {
 
   const [viewport, setViewport] = useState({
     isFullscreen: true,
-    latitude: 40.762,
-    longitude: -73.943,
-    zoom: 13.05,
+    latitude: 40.05,
+    longitude: -73.843,
+    zoom: 9,
     mapboxApiAccessToken: { TOKEN }
   });
 
@@ -25,13 +25,13 @@ function ReactMapGl() {
     console.log(mapStyle);
     switch (mapStyle) {
       case 2016:
-        return "mapbox://styles/seanleifhellier/ck53x0eyf04it1cl6tdcpr69c";
+        return "mapbox://styles/seanleifhellier/ck594e82i1s3x1coyjizcn489";
       case 2017:
-        return "mapbox://styles/seanleifhellier/ck53x1ro30kye1co9c9u1gzvc";
+        return "mapbox://styles/seanleifhellier/ck595wnpr1kcc1coxyi8yfkgc";
       case 2018:
-        return "mapbox://styles/seanleifhellier/ck53x36sg1rqv1ck59hy7zg6q";
+        return "mapbox://styles/seanleifhellier/ck5960gca0bov1cs7w1gobg3x";
       default:
-        return "mapbox://styles/seanleifhellier/ck53x36sg1rqv1ck59hy7zg6q";
+        return "mapbox://styles/seanleifhellier/ck5960gca0bov1cs7w1gobg3x";
     }
   }
 
