@@ -16,25 +16,31 @@ class Slider3 extends React.Component {
     };
   }
   onSliderChange = value => {
-    log(value);
+    // dataSwitch(value);
+    console.log(value);
     this.setState({
       value
     });
-    // switchStyles = value => {
-    //   switch (expression) {
-    //     case 2018:
-    //       // code block
-    //       break;
-    //     case 2017:
-    //       // code block
-    //       break;
-    //     case 2016:
-    //       // code block
-    //       break;
-    //     default:
-    //     // code block
-    //   }
   };
+  //        switchStyles = value => {
+  //       switch (expression) {
+  //         case 2018:
+  //         console.log("switch 2017");
+  // break;
+  //         case 2017:
+  //     console.log("switch 2017");
+  // break;
+  //         case 2016:
+  //     console.log("switch 2017");
+  // break;
+  //         default:
+  //     console.log("switch 2017");
+  // }
+  //     log(value);
+  //     this.setState({
+  //       value
+  //     });
+
   onAfterChange = value => {
     console.log(value); //eslint-disable-line
   };
@@ -58,5 +64,4 @@ class Slider3 extends React.Component {
     );
   }
 }
-
 export default Slider3;
