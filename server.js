@@ -16,7 +16,7 @@ app.use(express.json());
 const db = config.get('mongoURI');
 
 //Connect to Mongo
-mongoose.connect("mongodb://localhost/enoughdb", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/enoughdb", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
