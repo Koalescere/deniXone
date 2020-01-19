@@ -7,16 +7,16 @@ const auth = require('../../middleware/auth');
 
 
 //User Model
-const User = require('../../models/User');
+const User = require('../../models/user');
 
 //@route POST api/auth
 //@desc Authenticate user
 //@access Public
 router.post('/', (req, res) => {
-    const {email, password } = req.body;
+    const { email, password } = req.body;
 
     //Simple validation
-    if ( !email || !password) {
+    if (!email || !password) {
         return res.status(400).json({ msg: 'Please enter all fields' });
     }
     // Use the User model to check for existing user....email:email
@@ -26,28 +26,28 @@ router.post('/', (req, res) => {
 
             //valdiate password
             bcrypt.compare(password, user.password)
-                .then(isMatch =>{
-                    if(!isMatch) return res.status(400).json({msg: 'Invalid credentials'});
+                .then(isMatch => {
+                    if (!isMatch) return res.status(400).json({ msg: 'Invalid credentials' });
 
                     jwt.sign(
-                        {id: user.id},
+                        { id: user.id },
                         config.get('jwtSecret'),
-                        { expiresIn: 3600},
+                        { expiresIn: 3600 },
                         (err, token) => {
-                            if(err) throw err;
+                            if (err) throw err;
 
                             res.json({
                                 // token
-                                token : token, 
+                                token: token,
                                 user: {
                                     id: user.id,
                                     name: user.name,
                                     email: user.email
                                 }
                             });
-    
+
                         }
-                    )    
+                    )
                 })
 
         })
@@ -55,7 +55,7 @@ router.post('/', (req, res) => {
 //@route GET api/auth/user
 //@desc GET user
 //@access Private
-router.get('/user', auth, (req, res) =>{
+router.get('/user', auth, (req, res) => {
     User.findById(req.user.id)
         .select('-password')
         .then(user => res.json(user))

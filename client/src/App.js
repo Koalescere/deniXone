@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/footer";
 import ReactMapGl from "./components/ReactMapGl";
-import Slider3 from "./components/Slider3";
+// import MapslideContainer from "./components/MapslideContainer";
 
 class App extends Component {
   componentDidMount() {

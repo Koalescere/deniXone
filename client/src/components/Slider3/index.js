@@ -9,44 +9,24 @@ function log(value) {
 }
 
 class Slider3 extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 2018
-    };
-  }
   onSliderChange = value => {
-    log(value);
-    this.setState({
-      value
-    });
-    // switchStyles = value => {
-    //   switch (expression) {
-    //     case 2018:
-    //       // code block
-    //       break;
-    //     case 2017:
-    //       // code block
-    //       break;
-    //     case 2016:
-    //       // code block
-    //       break;
-    //     default:
-    //     // code block
-    //   }
+    // dataSwitch(value);
+    // console.log(value);
+    this.props.setMapStyle(value);
   };
-  onAfterChange = value => {
-    console.log(value); //eslint-disable-line
-  };
+
+  //onAfterChange = value => {
+  //  console.log(value); //eslint-disable-line
+  //};
 
   render() {
     return (
       <div className="styleslider">
         <Slider
           id="slider"
-          value={this.state.value}
+          value={this.props.mapStyle}
           onChange={this.onSliderChange}
-          onAfterChange={this.onAfterChange}
+          //onAfterChange={this.onAfterChange}
           defaultValue={2018}
           min={2016}
           max={2018}
