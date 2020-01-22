@@ -17,10 +17,10 @@ import {
 } from "reactstrap";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import RegisterModal from "./auth/RegisterModal";
-import LoginModal from "./auth/LoginModal";
-import Logout from "./auth/Logout";
-import SearchCollapse from "./SearchCollapse";
+// import RegisterModal from "./auth/RegisterModal";
+// import LoginModal from "./auth/LoginModal";
+// import Logout from "./auth/Logout";
+// import SearchCollapse from "./SearchCollapse";
 
 class AppNavbar extends Component {
   state = {
@@ -37,31 +37,31 @@ class AppNavbar extends Component {
     });
   };
   render() {
-    const { isAuthenticated, user } = this.props.auth;
+    // const { isAuthenticated, user } = this.props.auth;
 
-    const authLinks = (
-      <Fragment>
-        <NavItem>
-          <span className="navbar-text mr-3">
-            <strong>{user ? `Welcome ${user.name}` : ""}</strong>
-          </span>
-        </NavItem>
-        <NavItem>
-          <Logout />
-        </NavItem>
-      </Fragment>
-    );
+    // const authLinks = (
+    //   <Fragment>
+    //     <NavItem>
+    //       <span className="navbar-text mr-3">
+    //         <strong>{user ? `Welcome ${user.name}` : ""}</strong>
+    //       </span>
+    //     </NavItem>
+    //     <NavItem>
+    //       <Logout />
+    //     </NavItem>
+    //   </Fragment>
+    // );
 
-    const guestLinks = (
-      <Fragment>
-        <NavItem>
-          <RegisterModal />
-        </NavItem>
-        <NavItem>
-          <LoginModal />
-        </NavItem>
-      </Fragment>
-    );
+    // const guestLinks = (
+    //   <Fragment>
+    //     <NavItem>
+    //       <RegisterModal />
+    //     </NavItem>
+    //     <NavItem>
+    //       <LoginModal />
+    //     </NavItem>
+    //   </Fragment>
+    // );
 
     return (
       <div>
@@ -71,12 +71,12 @@ class AppNavbar extends Component {
             {/* <NavbarBrand className="logo" href="/">
               PRISM NYC
             </NavbarBrand> */}
-            <NavbarToggler onClick={this.toggle} />
+            {/* <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto drop" navbar>
                 {isAuthenticated ? authLinks : guestLinks}
               </Nav>
-            </Collapse>
+            </Collapse> */}
           </Container>
         </Navbar>
       </div>
