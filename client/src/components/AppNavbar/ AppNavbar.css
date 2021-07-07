@@ -21,7 +21,7 @@
   align-items: center;
   box-shadow: 5px 2px 5px #000000;
   border-bottom: 1px solid rgba(185, 185, 185, 0.678);
-  z-index: 70;
+  z-index: 10;
   position: relative;
   bottom: 0;
   right: 0;
